@@ -1,14 +1,14 @@
-# RAGSTA Bot 🤖
+# 🤖 RAGSTA Bot 
 
-## Overview 🔥
+## 🔥 Overview 
 
 RAGSTA Bot is a specialized RAG (Retrieval-Augmented Generation) chatbot developed by Vigneswaran. It's designed to answer queries based on user-uploaded PDF documents. The bot processes the uploaded documents, indexes their content, and uses this information to provide accurate and context-specific responses to user queries by using services like Cohere and Pinecone.
 
-## Accessing the Live Application 🛜
+## 🛜 Accessing the Live Application 
 
 You can access the live RAGSTA Bot application at: https://ragsta.streamlit.app/
 
-## Key Features ✅
+## ✅ Key Features 
 
 - PDF document upload and processing
 - Text extraction and indexing
@@ -16,7 +16,7 @@ You can access the live RAGSTA Bot application at: https://ragsta.streamlit.app/
 - Context-aware response generation
 - User-friendly chat interface
 
-## How It Works ⚙️
+## ⚙️ How It Works 
 
 1. **Document Processing**: When a user uploads a PDF, the bot extracts the text and splits it into manageable chunks.
 2. **Embedding Generation**: Each chunk is converted into a vector embedding using Cohere's embedding model.
