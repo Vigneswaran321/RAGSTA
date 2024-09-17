@@ -1,14 +1,14 @@
-# RAGSTA Bot
+# RAGSTA Bot 🤖
 
-## Overview
+## Overview 🔥
 
 RAGSTA Bot is a specialized RAG (Retrieval-Augmented Generation) chatbot developed by Vigneswaran. It's designed to answer queries based on user-uploaded PDF documents. The bot processes the uploaded documents, indexes their content, and uses this information to provide accurate and context-specific responses to user queries by using services like Cohere and Pinecone.
 
-## Accessing the Live Application
+## Accessing the Live Application 🛜
 
 You can access the live RAGSTA Bot application at: https://ragsta.streamlit.app/
 
-## Key Features
+## Key Features ✅
 
 - PDF document upload and processing
 - Text extraction and indexing
@@ -16,7 +16,7 @@ You can access the live RAGSTA Bot application at: https://ragsta.streamlit.app/
 - Context-aware response generation
 - User-friendly chat interface
 
-## How It Works
+## How It Works ⚙️
 
 1. **Document Processing**: When a user uploads a PDF, the bot extracts the text and splits it into manageable chunks.
 2. **Embedding Generation**: Each chunk is converted into a vector embedding using Cohere's embedding model.
@@ -25,7 +25,7 @@ You can access the live RAGSTA Bot application at: https://ragsta.streamlit.app/
 5. **Context Retrieval**: The most relevant document chunks are retrieved based on the query.
 6. **Response Generation**: Cohere's language model generates a response using the retrieved context and the user's query.
 
-## Setup and Installation
+## Setup and Installation 🗒️
 
 ### Prerequisites
 
@@ -91,7 +91,7 @@ ragsta-bot/
 ```
 
 
-## Usage
+## Usage 😎
 
 1. Upload a PDF document using the file uploader on the main page.
 2. Wait for the document to be processed and indexed.
@@ -99,18 +99,18 @@ ragsta-bot/
 4. View the bot's response and the relevant context extracted from the document.
 5. Use the "Copy Answer" button to easily copy the bot's response.
 
-## Technologies Used
+## Technologies Used 🧑‍💻
 
 - Streamlit: For creating the web interface
 - Cohere: For generating text embeddings and responses
 - Pinecone: For indexing and querying document embeddings
 - PyPDF2: For extracting text from PDF files
 
-## Contributing
+## Contributing 👇
 
 Contributions to RAGSTA Bot are welcome! Please feel free to submit a Pull Request.
 
 
-## Contact
+## Contact 📞
 
 For any queries or support, please contact Vigneswaran at https://vigneswaran.framer.ai/.
