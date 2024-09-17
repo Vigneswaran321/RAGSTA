@@ -74,11 +74,20 @@ def get_answer(query):
 
 # Main App
 st.set_page_config(
-    page_title="Custom QA Bot",  # Custom page title
-    page_icon="path/to/icon.png"  # Path to the favicon
+    page_title="RAGSTA Bot",  # Custom page title
+    page_icon="path/to/icon.png",  # Path to the favicon
+    layout="wide"
 )
 
-st.title("Interactive QA Bot")
+hide_streamlit_style = """
+            <style>
+            #MainMenu {visibility: hidden;}
+            footer {visibility: hidden;}
+            </style>
+            """
+st.markdown(hide_streamlit_style, unsafe_allow_html=True) 
+
+st.title("RAGSTA Bot")
 
 uploaded_file = st.file_uploader("Choose a PDF file", type="pdf")
 
@@ -96,7 +105,7 @@ for message in st.session_state.messages:
     with st.chat_message(message["role"]):
         st.markdown(message["content"])
 
-query = st.chat_input("Ask a question about the uploaded document:")
+query = st.chat_input("Ask a question about the pdf:")
 
 if query:
 
