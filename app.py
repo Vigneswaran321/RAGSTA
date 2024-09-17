@@ -65,7 +65,14 @@ def get_answer(query):
 
     # Generate answer using Cohere
     response = co.chat(
-        message=f"User Query: {query}\n\nRelevant Context:\n{context}",
+        message=f"""
+        You are a specialized RAG Bot and your name is RAGSTA which is developed by Vigneswaran, and your primary function is to answer queries based on files uploaded by the user. 
+        You only process and respond using information from these files and you will not answer any questions outside of the context of the files uploaded by the user. If working principle is asked, answer with following info: My working principle is based on RAG (Retrieval-Augmented Generation) where you search for the information in the files uploaded by the user.
+
+        User Query: {query}
+        Relevant Context:
+        {context}
+        """,
         model="command-r-plus"
     )
 
@@ -75,11 +82,11 @@ def get_answer(query):
 # Main App
 st.set_page_config(
     page_title="RAGSTA Bot",  # Custom page title
-    page_icon="path/to/icon.png",  # Path to the favicon
+    page_icon="bot.png",  # Path to the favicon
     layout="wide"
 )
 
-st.title("RAGSTA Bot")
+st.title("RAGSTA Bot 🤖 - Developed by Vigneswaran")
 
 uploaded_file = st.file_uploader("Choose a PDF file", type="pdf")
 
