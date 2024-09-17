@@ -81,15 +81,15 @@ ragsta-bot/
 ├── app.py                 # Main application file
 ├── requirements.txt       # Python dependencies
 ├── Dockerfile             # Docker configuration
+├── .gitignore             # Specifies intentionally untracked files to ignore
 ├── .streamlit/
 │   └── secrets.toml       # API keys and secrets (not in version control)
 ├── bot.png                # Bot icon for the web interface
 ├── README.md              # Project documentation
-└── Notebook/
+└── notebook/
     ├── dataset.csv        # Dataset file
     └── ragbot.ipynb       # Jupyter notebook for development and testing
 ```
-
 
 ## 😎 Usage 
 
