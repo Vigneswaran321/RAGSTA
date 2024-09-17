@@ -1,0 +1,6 @@
+streamlit
+cohere
+pinecone-client
+pandas
+PyPDF2
+st_copy_to_clipboard
