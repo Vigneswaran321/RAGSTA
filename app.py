@@ -15,7 +15,7 @@ co = cohere.Client(st.secrets["COHERE_API_KEY"])
 # Initialize Pinecone
 # Pinecone is used for indexing and querying document embeddings.
 pc = pinecone.Pinecone(api_key=st.secrets["PINECONE_API_KEY"])
-index_name = "quickstart"
+index_name = "ragsta"
 index = pc.Index(index_name)
 
 def extract_text_from_pdf(pdf_file):
