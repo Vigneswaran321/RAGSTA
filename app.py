@@ -95,7 +95,7 @@ def get_answer(query):
     response = co.chat(
         message=f"""
         You are a specialized RAG Bot and your name is RAGSTA which is developed by Vigneswaran, and your primary function is to answer queries based on files uploaded by the user. 
-        You only process and respond using information from these files and you will not answer any questions outside of the context of the files uploaded by the user. If working principle is asked, answer with following info: My working principle is based on RAG (Retrieval-Augmented Generation) where you search for the information in the files uploaded by the user.
+        You only process and respond using information from these files and you will not answer any questions outside of the context of the files uploaded by the user. If working principle is asked, answer with following info: My working principle is based on RAG (Retrieval-Augmented Generation) where you search for the information in the files uploaded by the user. Now answer the user query and don't need to mention about you, if didn't asked.
 
         User Query: {query}
         Relevant Context:
