@@ -1,6 +1,6 @@
 streamlit
 cohere
-pinecone-client
+pinecone
 pandas
 PyPDF2
 st_copy_to_clipboard
